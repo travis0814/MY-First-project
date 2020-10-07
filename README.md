@@ -31,3 +31,22 @@
  2. two
  3. three
 
+```Java
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("write email below");
+        String email = scan.nextLine();
+
+        System.out.println("write date below");
+        String date = scan.nextLine();
+
+        System.out.println("write name below");
+        String name = scan.nextLine();
+
+        scan.close();
+        ```
