@@ -1,0 +1,51 @@
+```Java
+package com.labproject.enroll;
+
+import java.time.LocalDate;
+import java.util.Scanner;
+
+public class CourseEnroll {
+
+	public static void main(String[] args) {
+		 
+		 
+		Scanner s = new Scanner(System.in);
+		
+		String firstName;
+        String lastName;
+        String fullName;
+        System.out.print("First Name:");
+        s = new Scanner(System.in);
+        firstName = s.nextLine();
+        System.out.print("Last Name:");
+        s = new Scanner(System.in);
+        lastName = s.nextLine();
+        fullName = firstName.concat(" ").concat(lastName);
+        System.out.print("Full name:"+fullName);
+		
+    	
+    	 System.out.println("Choose course to enroll:");
+    	 System.out.println("Physics");
+    	 System.out.println("English");
+    	 System.out.println("Geography");
+     String course = s.nextLine();
+    	 System.out.println();
+            LocalDate today = LocalDate.now();
+    	 
+    	 
+    	 System.out.println(firstName);
+    	 System.out.println("Congrats! You are now enrolled in:" + course);
+    	 System.out.println("Enrollment Date:" + today);
+    	 
+    	 s.close();
+ 
+    	
+
+		
+				
+		
+
+	}
+
+}
+```
